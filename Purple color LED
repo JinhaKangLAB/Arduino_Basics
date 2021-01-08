@@ -1,0 +1,14 @@
+  int Red = 11;
+  int Green = 10;
+  int Blue = 9;
+void setup() {
+}
+
+void loop() {
+  analogWrite(Red,148);
+  delay(500);
+  analogWrite(Green,0);
+  delay(500);
+  analogWrite(Blue,211);
+  delay(500);
+}
