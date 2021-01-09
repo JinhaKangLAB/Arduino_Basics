@@ -1,0 +1,8 @@
+void setup(){
+Serial.begin(9600);
+}
+void loop(){
+int data = analogRead(0); //Read data from variable resistance
+Serial.println(data);
+delay(500);
+}
