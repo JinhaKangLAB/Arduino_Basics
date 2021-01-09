@@ -1,0 +1,15 @@
+int Red = 11;
+int Green = 10;
+int Blue = 9;
+void setup() {
+Serial.begin(9600);
+}
+
+void loop() {
+int data = analogRead(0);
+Serial.println(data);
+delay(500);
+int bright = data/4;// analog input : 0~1023, but available to output : 0~255
+analogWrite(Red,bright);
+delay(500);
+}
