@@ -9,7 +9,7 @@ void loop() {
 int data = analogRead(0);
 Serial.println(data);
 delay(500);
-int bright = data/4;// Devide data by 4, since analog input : 0~1023, but available to output : 0~255, 
+int bright = data/4;// Since analog input: 0~1023, but available to output: 0~255,  so divide data by 4.
 analogWrite(Red,bright);
 delay(500);
 }
