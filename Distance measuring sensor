@@ -1,0 +1,22 @@
+int trig = 2;
+int echo = 4;
+
+
+void setup() {
+ Serial.begin(9600);
+ pinMode(trig.OUTPUT);
+ pinMode(echo,INPUT);
+}
+
+void loop() {
+ int duration, cm;
+ digitalWrite(trig, HIGH);
+ delayMicroseconds(20);
+ digitalWrite(trig, LOW);
+
+ duration = pulseln(echo,HIGH);
+ cm = duration /29 /2;
+ delay(1000);
+ Serial.print(cm);
+ Serial.println("cm");
+}
