@@ -14,9 +14,9 @@ void loop() {
  delayMicroseconds(20);
  digitalWrite(trig, LOW);
 
- duration = pulseln(echo,HIGH);
+ duration = pulseIn(echo,HIGH);
  cm = duration /29 /2;
  delay(1000);
  Serial.print(cm);
- Serial.println("cm");
+ Serial.printIn("cm");
 }
