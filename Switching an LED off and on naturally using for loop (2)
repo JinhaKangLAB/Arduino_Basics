@@ -1,0 +1,23 @@
+int Red = 11;
+int Green = 10;
+int Blue = 9;
+
+void setup() {
+
+
+}
+
+void loop() {
+
+  for(int i=255; i>0; i--)
+  {
+    analogWrite(Red,i);
+    delay(20);
+  }
+  for(int i=0; i<255; i++);
+  {
+    analogWrite(Red,i);
+    delay(20);
+  }
+
+}
