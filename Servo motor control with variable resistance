@@ -1,0 +1,18 @@
+#include <Servo.h>
+
+Servo servo;//Ready for using servo library 
+int servopin = 12;
+
+void setup() {
+  Serial.begin(9600);
+  servo.attach(servopin); // Servo Motor Initialization
+}
+
+void loop() {
+  int potent = analogRead(A0);
+  int angle = map(potent,0,1023,5,175);
+  Serial.println(analogRead(angle);
+  servo,write(angle);
+  delay(500);
+  
+}
